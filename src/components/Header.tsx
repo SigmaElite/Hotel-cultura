@@ -31,32 +31,32 @@ export default function Header() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 h-full">
             {!isRestaurant && (
               <>
-                <button onClick={() => scrollToSection('rooms')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('rooms')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   Номера
                 </button>
-                <button onClick={() => scrollToSection('offers')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('offers')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   Акции
                 </button>
-                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   О нас
                 </button>
-                <button onClick={() => scrollToSection('contact')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   Контакты
                 </button>
               </>
             )}
             {isRestaurant && (
               <>
-                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   О ресторане
                 </button>
-                <button onClick={() => scrollToSection('menu')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('menu')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   Меню
                 </button>
-                <button onClick={() => scrollToSection('reservation')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                <button onClick={() => scrollToSection('reservation')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 h-full flex items-center">
                   Бронирование
                 </button>
               </>
