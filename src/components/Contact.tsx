@@ -116,7 +116,7 @@ export default function Contact() {
           >
             <iframe
               title="Hotel Location"
-              src="https://yandex.ru/map-widget/v1/?ll=24.145789%2C53.677754&z=17&l=map&pt=24.145789%2C53.677754,pm2rdm&text=Отель Cultura"
+              src="https://yandex.ru/map-widget/v1/?text=г.%20Гродно%2C%20ул.%20Советская%2C%203%2C%20Отель%20Cultura&z=17&l=map"
               width="100%"
               height="100%"
               style={{ border: 0 }}
