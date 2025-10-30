@@ -36,9 +36,9 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+375152123456" className="flex items-center text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+            <a href="tel:+375333428888" className="flex items-center text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
               <Phone className="w-4 h-4 mr-2" />
-              +375 (152) 123-45-67
+              +375 33 342-88-88
             </a>
             <a
               href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
@@ -74,9 +74,9 @@ export default function Header() {
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
               Контакты
             </button>
-            <a href="tel:+375152123456" className="flex items-center py-2 text-sm text-gray-700">
+            <a href="tel:+375333428888" className="flex items-center py-2 text-sm text-gray-700">
               <Phone className="w-4 h-4 mr-2" />
-              +375 (152) 123-45-67
+              +375 33 342-88-88
             </a>
             <a
               href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"

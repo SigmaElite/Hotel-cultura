@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -17,13 +17,13 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>г. Гродно, ул. Советская, 3</li>
               <li>
-                <a href="tel:+375152123456" className="hover:text-white transition-colors">
-                  +375 (152) 123-45-67
+                <a href="tel:+375333428888" className="hover:text-white transition-colors">
+                  +375 33 342-88-88
                 </a>
               </li>
               <li>
-                <a href="mailto:info@hotelkultura.by" className="hover:text-white transition-colors">
-                  info@hotelkultura.by
+                <a href="https://www.instagram.com/boutique_hotel_kultura" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  @boutique_hotel_kultura
                 </a>
               </li>
             </ul>
@@ -32,14 +32,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-normal mb-4">СОЦИАЛЬНЫЕ СЕТИ</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/boutique_hotel_kultura" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>

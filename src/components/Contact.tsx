@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Instagram } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Contact() {
@@ -81,29 +81,30 @@ export default function Contact() {
                 <div>
                   <h4 className="text-sm font-normal text-gray-900 mb-2">ТЕЛЕФОН</h4>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    +375 (152) 123-45-67<br />
-                    +375 (29) 123-45-67
+                    +375 33 342-88-88
                   </p>
                 </div>
               </div>
 
-              <div
+              <a
+                href="https://www.instagram.com/boutique_hotel_kultura"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`flex items-start gap-6 group hover:translate-x-4 transition-all duration-500 cursor-pointer transform ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: '1s' }}
               >
                 <div className="w-12 h-12 border border-neutral-700 flex items-center justify-center flex-shrink-0 group-hover:bg-neutral-700 group-hover:scale-110 transition-all duration-300">
-                  <Mail className="w-5 h-5 text-neutral-700 group-hover:text-white transition-colors duration-300" />
+                  <Instagram className="w-5 h-5 text-neutral-700 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-normal text-gray-900 mb-2">EMAIL</h4>
+                  <h4 className="text-sm font-normal text-gray-900 mb-2">INSTAGRAM</h4>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    info@hotelkultura.by<br />
-                    booking@hotelkultura.by
+                    @boutique_hotel_kultura
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -115,7 +116,7 @@ export default function Contact() {
           >
             <iframe
               title="Hotel Location"
-              src="https://yandex.ru/map-widget/v1/?ll=24.145789%2C53.677754&z=16&l=map&pt=24.145789%2C53.677754,pm2rdm"
+              src="https://yandex.ru/map-widget/v1/?ll=24.145789%2C53.677754&z=17&l=map&pt=24.145789%2C53.677754,pm2rdm&text=г. Гродно, ул. Советская, 3"
               width="100%"
               height="100%"
               style={{ border: 0 }}
