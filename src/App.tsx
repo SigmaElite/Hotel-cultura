@@ -1,21 +1,18 @@
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Rooms from './components/Rooms';
-import Offers from './components/Offers';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HotelPage from './pages/HotelPage';
+import RestaurantPage from './pages/RestaurantPage';
 
 function App() {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Rooms />
-        <Offers />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<HotelPage />} />
+          <Route path="/restaurant" element={<RestaurantPage />} />
+        </Routes>
       </main>
       <Footer />
     </div>

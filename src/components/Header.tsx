@@ -1,8 +1,11 @@
 import { Menu, X, Phone } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isRestaurant = location.pathname === '/restaurant';
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -16,23 +19,48 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200 transform transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-light text-gray-900">ОТЕЛЬ КУЛЬТУРА</h1>
+          <div className="flex items-center gap-8">
+            <Link to="/" className="flex-shrink-0">
+              <h1 className="text-2xl font-light text-gray-900 hover:text-neutral-600 transition-colors duration-300">ОТЕЛЬ КУЛЬТУРА</h1>
+            </Link>
+            <Link
+              to={isRestaurant ? "/" : "/restaurant"}
+              className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 border-l border-neutral-300 pl-8"
+            >
+              {isRestaurant ? "Отель" : "Ресторан"}
+            </Link>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('rooms')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
-              Номера
-            </button>
-            <button onClick={() => scrollToSection('offers')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
-              Акции
-            </button>
-            <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
-              О нас
-            </button>
-            <button onClick={() => scrollToSection('contact')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
-              Контакты
-            </button>
+            {!isRestaurant && (
+              <>
+                <button onClick={() => scrollToSection('rooms')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  Номера
+                </button>
+                <button onClick={() => scrollToSection('offers')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  Акции
+                </button>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  О нас
+                </button>
+                <button onClick={() => scrollToSection('contact')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  Контакты
+                </button>
+              </>
+            )}
+            {isRestaurant && (
+              <>
+                <button onClick={() => scrollToSection('about')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  О ресторане
+                </button>
+                <button onClick={() => scrollToSection('menu')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  Меню
+                </button>
+                <button onClick={() => scrollToSection('reservation')} className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105">
+                  Бронирование
+                </button>
+              </>
+            )}
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -40,14 +68,24 @@ export default function Header() {
               <Phone className="w-4 h-4 mr-2" />
               +375 33 342-88-88
             </a>
-            <a
-              href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
-            >
-              Забронировать
-            </a>
+            {!isRestaurant && (
+              <a
+                href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
+              >
+                Забронировать
+              </a>
+            )}
+            {isRestaurant && (
+              <button
+                onClick={() => scrollToSection('reservation')}
+                className="px-6 py-2 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
+              >
+                Забронировать столик
+              </button>
+            )}
           </div>
 
           <button
@@ -62,30 +100,66 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-neutral-200 animate-fade-in">
           <div className="px-6 py-6 space-y-4">
-            <button onClick={() => scrollToSection('rooms')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
-              Номера
-            </button>
-            <button onClick={() => scrollToSection('offers')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
-              Акции
-            </button>
-            <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
-              О нас
-            </button>
-            <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
-              Контакты
-            </button>
+            <Link
+              to={isRestaurant ? "/" : "/restaurant"}
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300 font-medium"
+            >
+              {isRestaurant ? "← Отель" : "Ресторан →"}
+            </Link>
+            <div className="border-t border-neutral-200 pt-4">
+              {!isRestaurant && (
+                <>
+                  <button onClick={() => scrollToSection('rooms')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    Номера
+                  </button>
+                  <button onClick={() => scrollToSection('offers')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    Акции
+                  </button>
+                  <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    О нас
+                  </button>
+                  <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    Контакты
+                  </button>
+                </>
+              )}
+              {isRestaurant && (
+                <>
+                  <button onClick={() => scrollToSection('about')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    О ресторане
+                  </button>
+                  <button onClick={() => scrollToSection('menu')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    Меню
+                  </button>
+                  <button onClick={() => scrollToSection('reservation')} className="block w-full text-left py-2 text-sm text-gray-700 hover:translate-x-2 transition-transform duration-300">
+                    Бронирование
+                  </button>
+                </>
+              )}
+            </div>
             <a href="tel:+375333428888" className="flex items-center py-2 text-sm text-gray-700">
               <Phone className="w-4 h-4 mr-2" />
               +375 33 342-88-88
             </a>
-            <a
-              href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full px-6 py-3 bg-neutral-700 text-white text-center hover:bg-neutral-600 transition-all duration-300"
-            >
-              Забронировать
-            </a>
+            {!isRestaurant && (
+              <a
+                href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full px-6 py-3 bg-neutral-700 text-white text-center hover:bg-neutral-600 transition-all duration-300"
+              >
+                Забронировать
+              </a>
+            )}
+            {isRestaurant && (
+              <button
+                onClick={() => scrollToSection('reservation')}
+                className="block w-full px-6 py-3 bg-neutral-700 text-white text-center hover:bg-neutral-600 transition-all duration-300"
+              >
+                Забронировать столик
+              </button>
+            )}
           </div>
         </div>
       )}
