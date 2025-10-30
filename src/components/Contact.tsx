@@ -115,12 +115,13 @@ export default function Contact() {
           >
             <iframe
               title="Hotel Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.0634707395957!2d24.14298!3d53.677754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfdfe0758b93c3%3A0x4f28a1e4b9c6f1a8!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPIDMsINCT0YDQvtC00L3Qvg!5e0!3m2!1sru!2sby!4v1234567890!5m2!1sru!2sby"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.063470739596!2d24.140789976809845!3d53.67775397994744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfdfe5d8b93c3f%3A0x1a8b9c6f1e4a82f7!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCAzLCDQk9GA0L7QtNC90L4sINCR0LXQu9Cw0YDRg9GB0YzRjQ!5e0!3m2!1sru!2sby!4v1234567890123!5m2!1sru!2sby"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
