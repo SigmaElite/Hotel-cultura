@@ -1,0 +1,97 @@
+import { Eye } from 'lucide-react';
+
+export default function Gallery() {
+  const images = [
+    {
+      url: 'https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Интерьер номера',
+      span: 'col-span-2 row-span-2'
+    },
+    {
+      url: 'https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Ресторан',
+      span: 'col-span-1 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Лобби',
+      span: 'col-span-1 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Спа-зона',
+      span: 'col-span-1 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Панорамный вид',
+      span: 'col-span-1 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Фасад отеля',
+      span: 'col-span-2 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Спа-процедуры',
+      span: 'col-span-1 row-span-1'
+    },
+    {
+      url: 'https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Фитнес-центр',
+      span: 'col-span-1 row-span-1'
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-light tracking-wider text-gray-900 mb-4">
+            ГАЛЕРЕЯ
+          </h2>
+          <div className="w-24 h-px bg-gray-900 mx-auto mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Познакомьтесь с атмосферой нашего отеля через визуальное путешествие
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`${image.span} relative overflow-hidden group cursor-pointer animate-fade-in`}
+              style={{ animationDelay: `${index * 0.1}s`, opacity: 0, animation: `fadeIn 0.8s ease-out ${index * 0.1}s forwards` }}
+            >
+              <img
+                src={image.url}
+                alt={image.title}
+                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-75 brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-between p-6">
+                <div className="flex justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                  <div className="w-10 h-10 border border-white/50 flex items-center justify-center backdrop-blur-sm hover:bg-white/20 transition-colors duration-300">
+                    <Eye className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-white text-lg font-light tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    {image.title}
+                  </h3>
+                  <div className="w-12 h-0.5 bg-white mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <button className="px-8 py-4 border-2 border-gray-900 text-gray-900 text-sm tracking-widest hover:bg-gray-900 hover:text-white hover:scale-105 transition-all duration-300">
+            СМОТРЕТЬ ВСЕ ФОТО
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
