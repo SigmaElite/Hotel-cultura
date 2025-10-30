@@ -115,7 +115,7 @@ export default function Contact() {
           >
             <iframe
               title="Hotel Location"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=24.140789976809845%2C53.67675397994744%2C24.150789976809845%2C53.67875397994744&layer=mapnik&marker=53.67775397994744%2C24.145789976809845"
+              src="https://yandex.ru/map-widget/v1/?ll=24.145789%2C53.677754&z=16&l=map&pt=24.145789%2C53.677754,pm2rdm"
               width="100%"
               height="100%"
               style={{ border: 0 }}
