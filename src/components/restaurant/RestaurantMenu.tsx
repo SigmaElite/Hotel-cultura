@@ -40,6 +40,41 @@ export default function RestaurantMenu() {
 
   const menuCategories: MenuCategory[] = [
     {
+      title: 'Завтраки',
+      items: [
+        {
+          name: 'Английский завтрак с глазуньей',
+          description: 'Сочетаются глазунья, пармская ветчина, бекон, помидоры, грибы и картофель фри. Подается с тостами и соусом. 350 г',
+          price: '21 Br',
+          image: 'https://images.pexels.com/photos/101533/pexels-photo-101533.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Английский завтрак со скрэмблом',
+          description: 'Вкусный и полезный завтрак для всей семьи. Включает яичницу-скрэмбл, пармскую ветчину, бекон, помидоры, грибы. 350 г',
+          price: '21 Br',
+          image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Овсяная каша с бананом',
+          description: 'Мягкая овсяная каша с кремовой текстурой арахисовой пасты и кусочками спелого банана. Украсьте медом и орехами. 220 г',
+          price: '15 Br',
+          image: 'https://images.pexels.com/photos/216951/pexels-photo-216951.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Равиолли с творогом',
+          description: 'Нежный творожный десерт с ароматными ягодами и хрустящим миндалем. Поливается медом и подается с взбитой сливкой. 190 г',
+          price: '15 Br',
+          image: 'https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Сырники с малиновым соусом',
+          description: 'Мягкие сырники с золотистой корочкой обладают приятным творожным вкусом. Подаются с домашним малиновым соусом. 160 г',
+          price: '16 Br',
+          image: 'https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+      ]
+    },
+    {
       title: 'Закуски',
       items: [
         {
@@ -105,6 +140,58 @@ export default function RestaurantMenu() {
       ]
     },
     {
+      title: 'Салаты',
+      items: [
+        {
+          name: 'Салат с мандарином',
+          description: 'Мягкие сыры прекрасно гармонируют с нежностью мандарина и сладостью манго. Пастрами добавляет пикантности. 170 г',
+          price: '21 Br',
+          image: 'https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Салат с тунцом',
+          description: 'Тунец придаёт салату насыщенный вкус, яйцо пашот — нежную текстуру, а тыквенные семечки — хрустящую нотку. 230 г',
+          price: '21 Br',
+          image: 'https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Салат с филе индейки',
+          description: 'Индейка придаёт салату насыщенный вкус и сытность, а микс из свежих томатов — сочность. Кунжутно-медовая заправка. 230 г',
+          price: '21 Br',
+          image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+      ]
+    },
+    {
+      title: 'Супы',
+      items: [
+        {
+          name: 'Рамен с цыпленком',
+          description: 'Гармонично сочетаются насыщенный кисло-сладкий вкус бульона, нежное куриное филе, рисовая лапша и свежие овощи. 500 г',
+          price: '20 Br',
+          image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Суп с лесными грибами и полбой',
+          description: 'Гармонично сочетаются насыщенный вкус лесных грибов и ароматная полба. Приправлен свежей зеленью, подается с хлебом. 350 г',
+          price: '16 Br',
+          image: 'https://images.pexels.com/photos/4394100/pexels-photo-4394100.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Том ям с морепродуктами',
+          description: 'Гармонично сочетаются насыщенный кисло-острый вкус тайского бульона, нежные морепродукты и стеклянная лапша. 420 г',
+          price: '24 Br',
+          image: 'https://images.pexels.com/photos/2098143/pexels-photo-2098143.jpeg?auto=compress&cs=tinysrgb&w=600'
+        },
+        {
+          name: 'Тыквенный крем-суп',
+          description: 'Гармонично сочетаются сладковатый вкус тыквы и пикантный аромат пармезана. Нежная кремовая текстура, подается с гренками. 350 г',
+          price: '18 Br',
+          image: 'https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+      ]
+    },
+    {
       title: 'Горячие блюда',
       items: [
         {
@@ -154,93 +241,6 @@ export default function RestaurantMenu() {
           description: 'Сочное филе цыплёнка с муссом из батата — идеальное сочетание нежности и сладковатой нотки. Ежевичный соус добавляет яркости. 200 г',
           price: '21 Br',
           image: 'https://images.pexels.com/photos/2113556/pexels-photo-2113556.jpeg?auto=compress&cs=tinysrgb&w=600'
-        }
-      ]
-    },
-    {
-      title: 'Супы',
-      items: [
-        {
-          name: 'Рамен с цыпленком',
-          description: 'Гармонично сочетаются насыщенный кисло-сладкий вкус бульона, нежное куриное филе, рисовая лапша и свежие овощи. 500 г',
-          price: '20 Br',
-          image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Суп с лесными грибами и полбой',
-          description: 'Гармонично сочетаются насыщенный вкус лесных грибов и ароматная полба. Приправлен свежей зеленью, подается с хлебом. 350 г',
-          price: '16 Br',
-          image: 'https://images.pexels.com/photos/4394100/pexels-photo-4394100.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Том ям с морепродуктами',
-          description: 'Гармонично сочетаются насыщенный кисло-острый вкус тайского бульона, нежные морепродукты и стеклянная лапша. 420 г',
-          price: '24 Br',
-          image: 'https://images.pexels.com/photos/2098143/pexels-photo-2098143.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Тыквенный крем-суп',
-          description: 'Гармонично сочетаются сладковатый вкус тыквы и пикантный аромат пармезана. Нежная кремовая текстура, подается с гренками. 350 г',
-          price: '18 Br',
-          image: 'https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=600'
-        }
-      ]
-    },
-    {
-      title: 'Салаты',
-      items: [
-        {
-          name: 'Салат с мандарином',
-          description: 'Мягкие сыры прекрасно гармонируют с нежностью мандарина и сладостью манго. Пастрами добавляет пикантности. 170 г',
-          price: '21 Br',
-          image: 'https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Салат с тунцом',
-          description: 'Тунец придаёт салату насыщенный вкус, яйцо пашот — нежную текстуру, а тыквенные семечки — хрустящую нотку. 230 г',
-          price: '21 Br',
-          image: 'https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Салат с филе индейки',
-          description: 'Индейка придаёт салату насыщенный вкус и сытность, а микс из свежих томатов — сочность. Кунжутно-медовая заправка. 230 г',
-          price: '21 Br',
-          image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600'
-        }
-      ]
-    },
-    {
-      title: 'Завтраки',
-      items: [
-        {
-          name: 'Английский завтрак с глазуньей',
-          description: 'Сочетаются глазунья, пармская ветчина, бекон, помидоры, грибы и картофель фри. Подается с тостами и соусом. 350 г',
-          price: '21 Br',
-          image: 'https://images.pexels.com/photos/101533/pexels-photo-101533.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Английский завтрак со скрэмблом',
-          description: 'Вкусный и полезный завтрак для всей семьи. Включает яичницу-скрэмбл, пармскую ветчину, бекон, помидоры, грибы. 350 г',
-          price: '21 Br',
-          image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Овсяная каша с бананом',
-          description: 'Мягкая овсяная каша с кремовой текстурой арахисовой пасты и кусочками спелого банана. Украсьте медом и орехами. 220 г',
-          price: '15 Br',
-          image: 'https://images.pexels.com/photos/216951/pexels-photo-216951.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Равиолли с творогом',
-          description: 'Нежный творожный десерт с ароматными ягодами и хрустящим миндалем. Поливается медом и подается с взбитой сливкой. 190 г',
-          price: '15 Br',
-          image: 'https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600'
-        },
-        {
-          name: 'Сырники с малиновым соусом',
-          description: 'Мягкие сырники с золотистой корочкой обладают приятным творожным вкусом. Подаются с домашним малиновым соусом. 160 г',
-          price: '16 Br',
-          image: 'https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
