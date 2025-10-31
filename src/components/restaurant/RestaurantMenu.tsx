@@ -396,7 +396,7 @@ export default function RestaurantMenu() {
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className={`bg-[#e8e5e0] overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group transform ${
+                    className={`bg-white border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:border-gray-300 group transform ${
                       isVisible && activeCategory === categoryIndex
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-8'
