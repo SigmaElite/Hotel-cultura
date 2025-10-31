@@ -3,49 +3,49 @@ import { Eye } from 'lucide-react';
 export default function Gallery() {
   const images = [
     {
-      url: 'https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_12_2025-10-31_18-24-38.jpg',
       title: 'Интерьер номера',
       span: 'col-span-2 row-span-2'
     },
     {
-      url: 'https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_13_2025-10-31_18-24-38.jpg',
       title: 'Ресторан',
       span: 'col-span-1 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_14_2025-10-31_18-24-38.jpg',
       title: 'Лобби',
       span: 'col-span-1 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_15_2025-10-31_18-24-38.jpg',
       title: 'Спа-зона',
       span: 'col-span-1 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_16_2025-10-31_18-24-38.jpg',
       title: 'Панорамный вид',
       span: 'col-span-1 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_17_2025-10-31_18-24-38.jpg',
       title: 'Фасад отеля',
       span: 'col-span-2 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_18_2025-10-31_18-24-38.jpg',
       title: 'Спа-процедуры',
       span: 'col-span-1 row-span-1'
     },
     {
-      url: 'https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: '/photo_19_2025-10-31_18-24-38.jpg',
       title: 'Фитнес-центр',
       span: 'col-span-1 row-span-1'
     }
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#e8e5e0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-light tracking-wider text-gray-900 mb-4">
