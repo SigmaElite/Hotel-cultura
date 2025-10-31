@@ -4,6 +4,7 @@ interface MenuItem {
   name: string;
   description: string;
   price: string;
+  image: string;
 }
 
 interface MenuCategory {
@@ -44,22 +45,26 @@ export default function RestaurantMenu() {
         {
           name: 'Карпаччо из говядины',
           description: 'Тонко нарезанная мраморная говядина с рукколой и пармезаном',
-          price: '18 BYN'
+          price: '18 BYN',
+          image: 'https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Тартар из лосося',
           description: 'Свежий лосось с авокадо, каперсами и лимонным кремом',
-          price: '22 BYN'
+          price: '22 BYN',
+          image: 'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Буррата с томатами',
           description: 'Итальянский сыр с черри-томатами и базиликовым песто',
-          price: '16 BYN'
+          price: '16 BYN',
+          image: 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Фуа-гра',
           description: 'Утиная печень с карамелизированными яблоками и бриошью',
-          price: '32 BYN'
+          price: '32 BYN',
+          image: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
@@ -69,27 +74,32 @@ export default function RestaurantMenu() {
         {
           name: 'Стейк Рибай',
           description: 'Мраморная говядина 300г с овощами гриль и соусом демиглас',
-          price: '45 BYN'
+          price: '45 BYN',
+          image: 'https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Филе лосося',
           description: 'На подушке из шпината с лимонным маслом',
-          price: '38 BYN'
+          price: '38 BYN',
+          image: 'https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Каре ягненка',
           description: 'С розмарином, картофельным пюре и мятным соусом',
-          price: '42 BYN'
+          price: '42 BYN',
+          image: 'https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Равиоли с трюфелем',
           description: 'Домашняя паста с грибным кремом и стружкой трюфеля',
-          price: '28 BYN'
+          price: '28 BYN',
+          image: 'https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Утиная грудка',
           description: 'С апельсиновым соусом и картофелем гратен',
-          price: '36 BYN'
+          price: '36 BYN',
+          image: 'https://images.pexels.com/photos/8753657/pexels-photo-8753657.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
@@ -99,22 +109,26 @@ export default function RestaurantMenu() {
         {
           name: 'Тирамису',
           description: 'Классический итальянский десерт с маскарпоне',
-          price: '12 BYN'
+          price: '12 BYN',
+          image: 'https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Крем-брюле',
           description: 'Ванильный крем с карамельной корочкой',
-          price: '10 BYN'
+          price: '10 BYN',
+          image: 'https://images.pexels.com/photos/14477887/pexels-photo-14477887.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Шоколадный фондан',
           description: 'С жидким центром и шариком ванильного мороженого',
-          price: '14 BYN'
+          price: '14 BYN',
+          image: 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Панна-котта',
           description: 'С ягодным соусом и свежей мятой',
-          price: '11 BYN'
+          price: '11 BYN',
+          image: 'https://images.pexels.com/photos/5702806/pexels-photo-5702806.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     },
@@ -124,22 +138,26 @@ export default function RestaurantMenu() {
         {
           name: 'Эспрессо',
           description: 'Классический итальянский кофе',
-          price: '4 BYN'
+          price: '4 BYN',
+          image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Капучино',
           description: 'Эспрессо с взбитым молоком',
-          price: '6 BYN'
+          price: '6 BYN',
+          image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Свежевыжатый сок',
           description: 'Апельсин / грейпфрут / яблоко',
-          price: '8 BYN'
+          price: '8 BYN',
+          image: 'https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=600'
         },
         {
           name: 'Домашний лимонад',
           description: 'Освежающий напиток с мятой',
-          price: '7 BYN'
+          price: '7 BYN',
+          image: 'https://images.pexels.com/photos/1233319/pexels-photo-1233319.jpeg?auto=compress&cs=tinysrgb&w=600'
         }
       ]
     }
@@ -187,7 +205,7 @@ export default function RestaurantMenu() {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {menuCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
@@ -197,22 +215,32 @@ export default function RestaurantMenu() {
                   : 'opacity-0 hidden'
               }`}
             >
-              <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className={`bg-white p-8 hover:shadow-xl transition-all duration-500 hover:translate-x-2 transform ${
+                    className={`bg-white overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group transform ${
                       isVisible && activeCategory === categoryIndex
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-8'
                     }`}
                     style={{ transitionDelay: `${0.6 + itemIndex * 0.1}s` }}
                   >
-                    <div className="flex justify-between items-start mb-3">
-                      <h3 className="text-xl font-light text-gray-900">{item.name}</h3>
-                      <span className="text-lg text-neutral-700 font-light ml-4">{item.price}</span>
+                    <div className="relative h-64 overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
                     </div>
-                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                    <div className="p-6">
+                      <div className="flex justify-between items-start mb-3">
+                        <h3 className="text-xl font-light text-gray-900">{item.name}</h3>
+                        <span className="text-lg text-neutral-700 font-light ml-4 whitespace-nowrap">{item.price}</span>
+                      </div>
+                      <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                    </div>
                   </div>
                 ))}
               </div>
