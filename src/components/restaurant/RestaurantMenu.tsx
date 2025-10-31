@@ -46,31 +46,31 @@ export default function RestaurantMenu() {
           name: 'Английский завтрак с глазуньей',
           description: 'Сочетаются глазунья, пармская ветчина, бекон, помидоры, грибы и картофель фри. Подается с тостами и соусом. 350 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/101533/pexels-photo-101533.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_1_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Английский завтрак со скрэмблом',
           description: 'Вкусный и полезный завтрак для всей семьи. Включает яичницу-скрэмбл, пармскую ветчину, бекон, помидоры, грибы. 350 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_2_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Овсяная каша с бананом',
           description: 'Мягкая овсяная каша с кремовой текстурой арахисовой пасты и кусочками спелого банана. Украсьте медом и орехами. 220 г',
           price: '15 Br',
-          image: 'https://images.pexels.com/photos/216951/pexels-photo-216951.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_3_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Равиолли с творогом',
           description: 'Нежный творожный десерт с ароматными ягодами и хрустящим миндалем. Поливается медом и подается с взбитой сливкой. 190 г',
           price: '15 Br',
-          image: 'https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_4_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Сырники с малиновым соусом',
           description: 'Мягкие сырники с золотистой корочкой обладают приятным творожным вкусом. Подаются с домашним малиновым соусом. 160 г',
           price: '16 Br',
-          image: 'https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_5_2025-10-31_18-24-38.jpg'
         }
       ]
     },
