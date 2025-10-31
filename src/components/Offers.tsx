@@ -4,12 +4,12 @@ const offers = [
   {
     title: 'Романтический уикенд',
     description: 'Скидка 15% для пар. Романтическая атмосфера в историческом центре Гродно',
-    image: '/photo_10_2025-10-31_18-24-38.jpg'
+    image: 'https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1600'
   },
   {
     title: 'Культурная программа',
     description: 'Специальное предложение с посещением лучших достопримечательностей города',
-    image: '/photo_11_2025-10-31_18-24-38.jpg'
+    image: 'https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&w=1600'
   }
 ];
 

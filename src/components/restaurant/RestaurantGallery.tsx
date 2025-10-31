@@ -27,28 +27,28 @@ export default function RestaurantGallery() {
 
   const images = [
     {
-      url: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Elegant plated dish'
+      url: '/photo_1_2025-10-31_18-24-38.jpg',
+      alt: 'Английский завтрак с глазуньей'
     },
     {
-      url: 'https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Gourmet pasta dish'
+      url: '/photo_8_2025-10-31_18-24-38.jpg',
+      alt: 'Брускетты с сёмгой'
     },
     {
-      url: 'https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Fine dining steak'
+      url: '/photo_16_2025-10-31_18-24-38.jpg',
+      alt: 'Салат с мандарином'
     },
     {
-      url: 'https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Restaurant interior ambiance'
+      url: '/photo_23_2025-10-31_18-24-38.jpg',
+      alt: 'Говядина с клюквенным соусом'
     },
     {
-      url: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Dessert presentation'
+      url: '/photo_31_2025-10-31_18-24-38.jpg',
+      alt: 'Больше чем шу'
     },
     {
-      url: 'https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Seafood specialty'
+      url: '/photo_19_2025-10-31_18-24-38.jpg',
+      alt: 'Рамен с цыпленком'
     }
   ];
 
