@@ -105,7 +105,7 @@ export default function RestaurantReservation() {
           </div>
 
           <div
-            className={`bg-white p-10 transform transition-all duration-1000 hover:shadow-2xl ${
+            className={`bg-[#e8e5e0] p-10 transform transition-all duration-1000 hover:shadow-2xl ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: '0.5s' }}

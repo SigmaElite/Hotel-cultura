@@ -53,7 +53,7 @@ export default function RestaurantGallery() {
   ];
 
   return (
-    <section className="py-32 bg-white" ref={sectionRef}>
+    <section className="py-32 bg-[#e8e5e0]" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2

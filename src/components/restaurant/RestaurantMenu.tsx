@@ -81,61 +81,61 @@ export default function RestaurantMenu() {
           name: 'Брускетты с белыми грибами',
           description: 'Нежные белые грибы в сочетании с насыщенным вкусом кедровых орешков и тертым пармезаном на хрустящем тосте. 140 г',
           price: '16 Br',
-          image: 'https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_6_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Брускетты с папоротником',
           description: 'Нежные побеги папоротника обладают слегка ореховым ароматом, который прекрасно дополняется свежей зеленью на поджаренном хлебе. 140 г',
           price: '16 Br',
-          image: 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_7_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Брускетты с сёмгой',
           description: 'Нежная сёмга отлично сочетается с мягким сыром. Лёгкая кислинка лимона и свежая микрозелень создают идеальный баланс вкусов. 140 г',
           price: '18 Br',
-          image: 'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_8_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Драники с лососем',
           description: 'Гармонично сочетаются нежность драников, богатый вкус лосося, кремовая текстура сливочного сыра и яркий акцент красной икры. 160 г',
           price: '20 Br',
-          image: 'https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_9_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Киш с форелью и брокколи',
           description: 'Нежное песочное тесто в сочетании с сочной форелью и хрустящей брокколи, запеченными в сливочно-яичной заливке. 120 г',
           price: '14 Br',
-          image: 'https://images.pexels.com/photos/2116094/pexels-photo-2116094.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_10_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Мясное антипасто',
           description: 'Нежные мясные деликатесы: ветчина, салями, прошутто и копченая грудка. Подается с оливками, маринованными овощами. 220 г',
           price: '28 Br',
-          image: 'https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_11_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Обжаренные гедза с индейкой',
           description: 'Гармонично сочетаются насыщенный вкус обжаренных гедз с нежным фаршем из индейки и острым тайским соусом. 150 г',
           price: '16 Br',
-          image: 'https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_12_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Пирог с лисичками и шпинатом',
           description: 'Рассыпчатое тесто гармонично сочетается с мягкой начинкой из лесных лисичек и нежного шпината, приправленных сливками. 120 г',
           price: '13 Br',
-          image: 'https://images.pexels.com/photos/5640020/pexels-photo-5640020.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_13_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Сырное антипасто',
           description: 'Нежные и ароматные сыры: бри, дор блю, пармезан и моцарелла. Подается с медом, орехами, вялеными томатами и хлебом. 220 г',
           price: '28 Br',
-          image: 'https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_14_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Утиный паштет с яблоком',
           description: 'Нежный утиный паштет с кисло-сладкой ноткой от запеченного яблока и ароматом специй. Подается с тостами. 140 г',
           price: '17 Br',
-          image: 'https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_15_2025-10-31_18-24-38.jpg'
         }
       ]
     },
@@ -146,19 +146,19 @@ export default function RestaurantMenu() {
           name: 'Салат с мандарином',
           description: 'Мягкие сыры прекрасно гармонируют с нежностью мандарина и сладостью манго. Пастрами добавляет пикантности. 170 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_16_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Салат с тунцом',
           description: 'Тунец придаёт салату насыщенный вкус, яйцо пашот — нежную текстуру, а тыквенные семечки — хрустящую нотку. 230 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_17_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Салат с филе индейки',
           description: 'Индейка придаёт салату насыщенный вкус и сытность, а микс из свежих томатов — сочность. Кунжутно-медовая заправка. 230 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_18_2025-10-31_18-24-38.jpg'
         }
       ]
     },
@@ -169,25 +169,25 @@ export default function RestaurantMenu() {
           name: 'Рамен с цыпленком',
           description: 'Гармонично сочетаются насыщенный кисло-сладкий вкус бульона, нежное куриное филе, рисовая лапша и свежие овощи. 500 г',
           price: '20 Br',
-          image: 'https://images.pexels.com/photos/1907228/pexels-photo-1907228.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_19_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Суп с лесными грибами и полбой',
           description: 'Гармонично сочетаются насыщенный вкус лесных грибов и ароматная полба. Приправлен свежей зеленью, подается с хлебом. 350 г',
           price: '16 Br',
-          image: 'https://images.pexels.com/photos/4394100/pexels-photo-4394100.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_20_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Том ям с морепродуктами',
           description: 'Гармонично сочетаются насыщенный кисло-острый вкус тайского бульона, нежные морепродукты и стеклянная лапша. 420 г',
           price: '24 Br',
-          image: 'https://images.pexels.com/photos/2098143/pexels-photo-2098143.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_21_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Тыквенный крем-суп',
           description: 'Гармонично сочетаются сладковатый вкус тыквы и пикантный аромат пармезана. Нежная кремовая текстура, подается с гренками. 350 г',
           price: '18 Br',
-          image: 'https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_22_2025-10-31_18-24-38.jpg'
         }
       ]
     },
@@ -198,49 +198,49 @@ export default function RestaurantMenu() {
           name: 'Говядина с клюквенным соусом',
           description: 'Гармонично сочетаются насыщенный вкус нежной говядины и кисло-сладкий аромат клюквенного соуса. С картофельным пюре. 300 г',
           price: '25 Br',
-          image: 'https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_23_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Индейка с соусом из белых грибов',
           description: 'Индейка сочная и мягкая. Грибной соус придает глубину вкуса, а воздушный мусс из батата добавляет сладковатую нотку. 200 г',
           price: '22 Br',
-          image: 'https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_24_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Пад-тай с цыпленком',
           description: 'Сочетание нежного куриного филе, хрустящих овощей и рисовой лапши в сладко-остром соусе. Посыпано обжаренным арахисом. 320 г',
           price: '24 Br',
-          image: 'https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_25_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Паста фетучини с лососем',
           description: 'Фетучини идеально сочетается с нежным лососем и кремовым сливочным соусом. Ароматная зелень и немного лимонной цедры. 220 г',
           price: '24 Br',
-          image: 'https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_26_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Пибимпаб с цыпленком',
           description: 'Гармонично сочетаются рис, нежное куриное филе, маринованные овощи, яичница-глазунья и острый соус. 410 г',
           price: '22 Br',
-          image: 'https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_27_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Стейк из лосося',
           description: 'Лосось нежный и сочный. Грибной соус придает ему насыщенность, а свежий сезонный салат с легким заправкой освежает вкус. 230 г',
           price: '28 Br',
-          image: 'https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_28_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Утиная грудка с пититимом',
           description: 'Нежное утиное мясо прекрасно гармонирует с рассыпчатым пититимом и ярким, слегка кисловатым малиновым соусом. 210 г',
           price: '22 Br',
-          image: 'https://images.pexels.com/photos/8753657/pexels-photo-8753657.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_29_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Филе цыплёнка с ежевичным соусом',
           description: 'Сочное филе цыплёнка с муссом из батата — идеальное сочетание нежности и сладковатой нотки. Ежевичный соус добавляет яркости. 200 г',
           price: '21 Br',
-          image: 'https://images.pexels.com/photos/2113556/pexels-photo-2113556.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_30_2025-10-31_18-24-38.jpg'
         }
       ]
     },
@@ -251,37 +251,37 @@ export default function RestaurantMenu() {
           name: 'Больше чем шу',
           description: 'Воздушная булочка шу дополнена нежным заварным кремом и ягодами. Посыпана сахарной пудрой, подается с черничным соусом. 120 г',
           price: '15 Br',
-          image: 'https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_31_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Гедза с манго',
           description: 'Мягкие и упругие гедза с сочной начинкой гармонично сочетаются с кремом маскарпоне и кубиками спелого манго. 120 г',
           price: '15 Br',
-          image: 'https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_32_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Гедза с яблоком',
           description: 'Гармонично сочетаются насыщенный вкус гедз с начинкой из яблочного джема и нежным кремом маскарпоне. 120 г',
           price: '15 Br',
-          image: 'https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_6_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Павлова с маскарпоне',
           description: 'Нежный десерт с текстурой облака. Воздушный меренговый корж заполнен кремом маскарпоне и свежими сезонными ягодами. 110 г',
           price: '13 Br',
-          image: 'https://images.pexels.com/photos/5702806/pexels-photo-5702806.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_7_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Черничный тарт',
           description: 'Нежный миндальный крем гармонично сочетается с ягодной начинкой из черники. Подается с легкой взбитой сливкой. 130 г',
           price: '13 Br',
-          image: 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_8_2025-10-31_18-24-38.jpg'
         },
         {
           name: 'Яблочный пирог',
           description: 'Десерт сочетает в себе сладость яблок и пряную нотку корицы. Подается с яблочным чатни и шариком мороженого. 150 г',
           price: '13 Br',
-          image: 'https://images.pexels.com/photos/3762069/pexels-photo-3762069.jpeg?auto=compress&cs=tinysrgb&w=600'
+          image: '/photo_9_2025-10-31_18-24-38.jpg'
         }
       ]
     },
@@ -396,7 +396,7 @@ export default function RestaurantMenu() {
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className={`bg-white overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group transform ${
+                    className={`bg-[#e8e5e0] overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group transform ${
                       isVisible && activeCategory === categoryIndex
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-8'
