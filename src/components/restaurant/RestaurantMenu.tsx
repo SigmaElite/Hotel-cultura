@@ -424,17 +424,6 @@ export default function RestaurantMenu() {
             </div>
           ))}
         </div>
-
-        <div
-          className={`text-center mt-16 transform transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-          style={{ transitionDelay: '1s' }}
-        >
-          <p className="text-gray-600 text-sm">
-            * Цены указаны в белорусских рублях и могут быть изменены
-          </p>
-        </div>
       </div>
     </section>
   );
