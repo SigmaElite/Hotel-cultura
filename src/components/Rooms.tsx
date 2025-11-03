@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import BookingModal from './BookingModal';
 
 const rooms = [
   {
@@ -26,6 +27,8 @@ const rooms = [
 
 export default function Rooms() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedRoom, setSelectedRoom] = useState<{ type: string; price: number } | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -103,19 +106,31 @@ export default function Rooms() {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-2xl font-light text-gray-900">{room.price}</span>
-                <a
-                  href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => {
+                    setSelectedRoom({ type: room.title, price: parseInt(room.price.match(/\d+/)?.[0] || '120') });
+                    setIsModalOpen(true);
+                  }}
                   className="px-6 py-3 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
                 >
                   Забронировать
-                </a>
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {selectedRoom && (
+        <BookingModal
+          isOpen={isModalOpen}
+          onClose={() => {
+            setIsModalOpen(false);
+            setSelectedRoom(null);
+          }}
+          roomType={selectedRoom.type}
+          pricePerNight={selectedRoom.price}
+        />
+      )}
     </section>
   );
 }
