@@ -71,9 +71,7 @@ export default function About() {
               style={{ transitionDelay: '1s' }}
             >
               <a
-                href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#rooms"
                 className="inline-block px-8 py-4 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
               >
                 Забронировать

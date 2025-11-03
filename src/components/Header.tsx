@@ -70,9 +70,7 @@ export default function Header() {
             </a>
             {!isRestaurant && (
               <a
-                href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#rooms"
                 className="px-6 py-2 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
               >
                 Забронировать
@@ -144,9 +142,8 @@ export default function Header() {
             </a>
             {!isRestaurant && (
               <a
-                href="https://ostrovok.ru/hotel/belarus/grodna/mid13284772/boutique_hotel_kultura/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#rooms"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full px-6 py-3 bg-neutral-700 text-white text-center hover:bg-neutral-600 transition-all duration-300"
               >
                 Забронировать
