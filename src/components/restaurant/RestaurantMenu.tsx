@@ -34,8 +34,8 @@ export default function RestaurantMenu() {
   ];
 
   const kidsMenuPages = [
-    '/photo_3_2025-11-03_22-04-02.jpg',
-    '/photo_4_2025-11-03_22-04-02.jpg'
+    '/photo_4_2025-11-03_22-04-02.jpg',
+    '/photo_3_2025-11-03_22-04-02.jpg'
   ];
 
   const currentPages = activeMenu === 'main' ? mainMenuPages : kidsMenuPages;
@@ -90,14 +90,15 @@ export default function RestaurantMenu() {
         </div>
       </div>
 
-      <div className="flex-1 flex items-start justify-center px-4 pb-12">
-        <div className="w-full max-w-[1400px]">
+      <div className="flex-1 flex items-start justify-center pb-12">
+        <div className="w-full max-w-[1800px]">
           <div className="relative w-full">
             <div className="relative w-full bg-white">
               <img
                 src={currentPages[currentPage]}
                 alt={`${activeMenu === 'main' ? 'Основное меню' : 'Детское меню'} - страница ${currentPage + 1}`}
-                className="w-full h-auto object-contain max-h-[85vh]"
+                className="w-full h-auto object-contain"
+                style={{ maxHeight: 'calc(100vh - 200px)' }}
               />
             </div>
 
