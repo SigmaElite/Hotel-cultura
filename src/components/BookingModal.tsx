@@ -7,9 +7,11 @@ interface BookingModalProps {
   onClose: () => void;
   roomType?: string;
   pricePerNight?: number;
+  discountPercentage?: number;
+  offerTitle?: string;
 }
 
-export default function BookingModal({ isOpen, onClose, roomType = 'Стандарт', pricePerNight = 120 }: BookingModalProps) {
+export default function BookingModal({ isOpen, onClose, roomType = 'Стандарт', pricePerNight = 120, discountPercentage = 0, offerTitle }: BookingModalProps) {
   const [step, setStep] = useState<'booking' | 'payment'>('booking');
   const [loading, setLoading] = useState(false);
   const [bookingId, setBookingId] = useState<string>('');
@@ -41,7 +43,9 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
     return nights > 0 ? nights : 0;
   };
 
-  const totalPrice = calculateNights() * pricePerNight;
+  const basePrice = calculateNights() * pricePerNight;
+  const discountAmount = discountPercentage > 0 ? Math.round(basePrice * (discountPercentage / 100)) : 0;
+  const totalPrice = basePrice - discountAmount;
 
   const handleBookingSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -146,6 +150,13 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-medium text-gray-900 mb-2">{roomType}</h3>
                 <p className="text-gray-600">{pricePerNight.toLocaleString('ru-RU')} BYN за ночь</p>
+                {offerTitle && discountPercentage > 0 && (
+                  <div className="mt-2 flex items-center gap-2">
+                    <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded">
+                      {offerTitle} - Скидка {discountPercentage}%
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -257,8 +268,20 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
                     <span className="text-gray-700">Количество ночей:</span>
                     <span className="font-medium">{calculateNights()}</span>
                   </div>
-                  <div className="flex justify-between items-center text-xl font-medium mt-2">
-                    <span className="text-gray-900">Итого:</span>
+                  {discountPercentage > 0 && (
+                    <>
+                      <div className="flex justify-between items-center text-lg mt-2">
+                        <span className="text-gray-700">Сумма без скидки:</span>
+                        <span className="line-through text-gray-500">{basePrice.toLocaleString('ru-RU')} BYN</span>
+                      </div>
+                      <div className="flex justify-between items-center text-lg mt-1">
+                        <span className="text-green-700 font-medium">Скидка ({discountPercentage}%):</span>
+                        <span className="text-green-700 font-medium">-{discountAmount.toLocaleString('ru-RU')} BYN</span>
+                      </div>
+                    </>
+                  )}
+                  <div className="flex justify-between items-center text-xl font-medium mt-2 pt-2 border-t border-gray-300">
+                    <span className="text-gray-900">Итого к оплате:</span>
                     <span className="text-neutral-700">{totalPrice.toLocaleString('ru-RU')} BYN</span>
                   </div>
                 </div>

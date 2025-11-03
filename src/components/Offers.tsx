@@ -1,20 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
+import BookingModal from './BookingModal';
 
 const offers = [
   {
     title: 'Романтический уикенд',
     description: 'Скидка 15% для пар. Романтическая атмосфера в историческом центре Гродно',
-    image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    discount: 15
   },
   {
     title: 'Культурная программа',
-    description: 'Специальное предложение с посещением лучших достопримечательностей города',
-    image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    description: 'Скидка 10% на проживание с посещением лучших достопримечательностей города',
+    image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    discount: 10
   }
 ];
 
 export default function Offers() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedOffer, setSelectedOffer] = useState<{ title: string; discount: number } | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -84,16 +89,30 @@ export default function Offers() {
               <p className="text-gray-600 mb-8 leading-relaxed text-lg">
                 {offer.description}
               </p>
-              <a
-                href="#rooms"
+              <button
+                onClick={() => {
+                  setSelectedOffer({ title: offer.title, discount: offer.discount });
+                  setIsModalOpen(true);
+                }}
                 className="inline-block px-8 py-4 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
               >
                 Забронировать
-              </a>
+              </button>
             </div>
           ))}
         </div>
       </div>
+      {selectedOffer && (
+        <BookingModal
+          isOpen={isModalOpen}
+          onClose={() => {
+            setIsModalOpen(false);
+            setSelectedOffer(null);
+          }}
+          discountPercentage={selectedOffer.discount}
+          offerTitle={selectedOffer.title}
+        />
+      )}
     </section>
   );
 }
