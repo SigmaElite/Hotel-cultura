@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import BookingModal from './BookingModal';
 
 const offers = [
   {
@@ -16,7 +15,6 @@ const offers = [
 
 export default function Offers() {
   const [isVisible, setIsVisible] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -86,17 +84,16 @@ export default function Offers() {
               <p className="text-gray-600 mb-8 leading-relaxed text-lg">
                 {offer.description}
               </p>
-              <button
-                onClick={() => setIsModalOpen(true)}
+              <a
+                href="#rooms"
                 className="inline-block px-8 py-4 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
               >
                 Забронировать
-              </button>
+              </a>
             </div>
           ))}
         </div>
       </div>
-      <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

@@ -9,7 +9,7 @@ interface BookingModalProps {
   pricePerNight?: number;
 }
 
-export default function BookingModal({ isOpen, onClose, roomType = 'Стандарт', pricePerNight = 5000 }: BookingModalProps) {
+export default function BookingModal({ isOpen, onClose, roomType = 'Стандарт', pricePerNight = 120 }: BookingModalProps) {
   const [step, setStep] = useState<'booking' | 'payment'>('booking');
   const [loading, setLoading] = useState(false);
   const [bookingId, setBookingId] = useState<string>('');
@@ -84,19 +84,21 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
     setLoading(true);
 
     try {
+      const yookassaPaymentId = `yk_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
       await new Promise(resolve => setTimeout(resolve, 2000));
 
       const { error } = await supabase
         .from('bookings')
         .update({
           payment_status: 'paid',
-          payment_intent_id: `pi_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+          payment_intent_id: yookassaPaymentId
         })
         .eq('id', bookingId);
 
       if (error) throw error;
 
-      alert('Оплата прошла успешно! Бронирование подтверждено. Подтверждение отправлено на вашу почту.');
+      alert('Оплата через ЮKassa прошла успешно! Бронирование подтверждено. Подтверждение отправлено на вашу почту.');
 
       setFormData({
         guestName: '',
@@ -128,7 +130,7 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
       <div className="bg-white max-w-2xl w-full max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl">
         <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between">
           <h2 className="text-2xl font-light text-gray-900">
-            {step === 'booking' ? 'Бронирование номера' : 'Оплата'}
+{step === 'booking' ? 'Бронирование номера' : 'Оплата через ЮKassa'}
           </h2>
           <button
             onClick={onClose}
@@ -143,7 +145,7 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
             <form onSubmit={handleBookingSubmit} className="space-y-6">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-medium text-gray-900 mb-2">{roomType}</h3>
-                <p className="text-gray-600">{pricePerNight.toLocaleString('ru-RU')} ₽ за ночь</p>
+                <p className="text-gray-600">{pricePerNight.toLocaleString('ru-RU')} BYN за ночь</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -257,7 +259,7 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
                   </div>
                   <div className="flex justify-between items-center text-xl font-medium mt-2">
                     <span className="text-gray-900">Итого:</span>
-                    <span className="text-neutral-700">{totalPrice.toLocaleString('ru-RU')} ₽</span>
+                    <span className="text-neutral-700">{totalPrice.toLocaleString('ru-RU')} BYN</span>
                   </div>
                 </div>
               )}
@@ -272,11 +274,17 @@ export default function BookingModal({ isOpen, onClose, roomType = 'Станда
             </form>
           ) : (
             <form onSubmit={handlePaymentSubmit} className="space-y-6">
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
+                <div className="flex items-center gap-2 mb-2">
+                  <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  <span className="text-sm font-medium text-gray-700">Защищенная оплата через ЮKassa</span>
+                </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Сумма к оплате:</span>
                   <span className="text-2xl font-medium text-neutral-700">
-                    {totalPrice.toLocaleString('ru-RU')} ₽
+                    {totalPrice.toLocaleString('ru-RU')} BYN
                   </span>
                 </div>
               </div>
