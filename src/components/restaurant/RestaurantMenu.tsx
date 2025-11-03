@@ -90,15 +90,20 @@ export default function RestaurantMenu() {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 flex items-center justify-center overflow-hidden">
         <div className="w-full h-full flex items-center justify-center">
           <div className="relative w-full h-full flex items-center justify-center">
-            <div className="relative w-full h-full flex items-center justify-center px-2">
+            <div className="relative flex items-center justify-center">
               <img
                 src={currentPages[currentPage]}
                 alt={`${activeMenu === 'main' ? 'Основное меню' : 'Детское меню'} - страница ${currentPage + 1}`}
-                className="w-full h-full object-contain"
-                style={{ maxHeight: 'calc(100vh - 120px)', maxWidth: '100%' }}
+                className="object-contain"
+                style={{
+                  maxHeight: 'calc((100vh - 120px) * 1.5)',
+                  maxWidth: 'calc(100vw * 1.5)',
+                  width: '150%',
+                  height: 'auto'
+                }}
               />
             </div>
 
