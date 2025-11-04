@@ -26,19 +26,19 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="py-32 bg-[#e8e5e0]" ref={sectionRef}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+    <section id="about" className="py-16 md:py-32 bg-[#e8e5e0]" ref={sectionRef}>
+      <div className="max-w-7xl mx-auto px-4 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-start">
           <div>
             <h2
-              className={`text-3xl md:text-5xl font-light text-gray-900 mb-12 leading-tight transform transition-all duration-1000 ${
+              className={`text-2xl md:text-5xl font-light text-gray-900 mb-8 md:mb-12 leading-tight transform transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '0.2s' }}
             >
               Что такое<br />Отель Культура?
             </h2>
-            <div className="space-y-8 text-gray-700 leading-relaxed text-lg">
+            <div className="space-y-6 md:space-y-8 text-gray-700 leading-relaxed text-base md:text-lg">
               <p
                 className={`transform transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -65,14 +65,14 @@ export default function About() {
               </p>
             </div>
             <div
-              className={`mt-12 transform transition-all duration-1000 ${
+              className={`mt-8 md:mt-12 transform transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '1s' }}
             >
               <a
                 href="#rooms"
-                className="inline-block px-8 py-4 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105"
+                className="inline-block w-full sm:w-auto text-center px-6 md:px-8 py-3 md:py-4 bg-neutral-700 text-white hover:bg-neutral-600 transition-all duration-300 hover:scale-105 text-sm md:text-base"
               >
                 Забронировать
               </a>
@@ -85,7 +85,7 @@ export default function About() {
             }`}
             style={{ transitionDelay: '0.3s' }}
           >
-            <div className="w-full h-[600px] overflow-hidden transform hover:shadow-2xl transition-all duration-500 relative">
+            <div className="w-full h-[300px] md:h-[600px] overflow-hidden transform hover:shadow-2xl transition-all duration-500 relative">
               <img
                 src="https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt="Hotel Spa"
