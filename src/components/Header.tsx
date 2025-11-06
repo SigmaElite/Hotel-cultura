@@ -19,13 +19,13 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200 transform transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-4 md:gap-8">
+          <div className="flex items-center gap-3 md:gap-8">
             <Link to="/" className="flex-shrink-0">
               <h1 className="text-lg md:text-2xl font-light text-gray-900 hover:text-neutral-600 transition-colors duration-300">ОТЕЛЬ КУЛЬТУРА</h1>
             </Link>
             <Link
               to={isRestaurant ? "/" : "/restaurant"}
-              className="text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 border-l border-neutral-300 pl-4 md:pl-8 hidden md:block"
+              className="text-xs md:text-sm text-gray-700 hover:text-gray-900 transition-all duration-300 hover:scale-105 md:border-l border-neutral-300 md:pl-8"
             >
               {isRestaurant ? "Отель" : "Ресторан"}
             </Link>
